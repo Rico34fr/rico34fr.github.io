@@ -63,10 +63,6 @@
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
-            .sidebar {
-                position: relative;
-                top: 0;
-            }
         }
 
         /* --- SIDEBAR --- */
@@ -77,6 +73,13 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .sidebar {
+                position: relative !important;
+                top: 0;
+            }
         }
 
         .header-section {
@@ -323,8 +326,24 @@
 
         .job-title-group {
             display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .job-title-text {
+            display: flex;
             flex-direction: column;
             gap: 5px;
+        }
+
+        .company-logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            object-fit: contain;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .company-name {
@@ -532,8 +551,11 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div class="job-title-group">
-                                <div class="company-name">Finary</div>
-                                <div class="role-title">VP Finance</div>
+                                <img src="https://www.google.com/s2/favicons?domain=finary.com&sz=128" alt="Finary" class="company-logo">
+                                <div class="job-title-text">
+                                    <div class="company-name">Finary</div>
+                                    <div class="role-title">VP Finance</div>
+                                </div>
                             </div>
                             <div class="job-date">03.2026 – Present</div>
                         </div>
@@ -550,8 +572,11 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div class="job-title-group">
-                                <div class="company-name">Flowdesk</div>
-                                <div class="role-title">Head of Finance</div>
+                                <img src="https://www.google.com/s2/favicons?domain=flowdesk.co&sz=128" alt="Flowdesk" class="company-logo">
+                                <div class="job-title-text">
+                                    <div class="company-name">Flowdesk</div>
+                                    <div class="role-title">Head of Finance</div>
+                                </div>
                             </div>
                             <div class="job-date">03.2023 – 12.2025</div>
                         </div>
@@ -568,8 +593,11 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div class="job-title-group">
-                                <div class="company-name">Blockchain@HEC</div>
-                                <div class="role-title">Investor Relations Manager</div>
+                                <img src="hec.png" alt="Blockchain@HEC" class="company-logo">
+                                <div class="job-title-text">
+                                    <div class="company-name">Blockchain@HEC</div>
+                                    <div class="role-title">Investor Relations Manager</div>
+                                </div>
                             </div>
                             <div class="job-date">01.2022 – 03.2023</div>
                         </div>
@@ -585,8 +613,11 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div class="job-title-group">
-                                <div class="company-name">Vokko</div>
-                                <div class="role-title">Chief Financial Officer</div>
+                                <img src="vokko.jpg" alt="Vokko" class="company-logo">
+                                <div class="job-title-text">
+                                    <div class="company-name">Vokko</div>
+                                    <div class="role-title">Chief Financial Officer</div>
+                                </div>
                             </div>
                             <div class="job-date">12.2021 – 12.2022</div>
                         </div>
@@ -600,8 +631,11 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div class="job-title-group">
-                                <div class="company-name">Tech Startups</div>
-                                <div class="role-title">Private Investor & Fundraiser</div>
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230ea5e9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 3v18h18'/><path d='M18 9l-5 5-4-4-5 5'/><circle cx='18' cy='9' r='2' fill='%2310b981' stroke='%2310b981'/></svg>" alt="Tech Startups" class="company-logo">
+                                <div class="job-title-text">
+                                    <div class="company-name">Tech Startups</div>
+                                    <div class="role-title">Private Investor & Fundraiser</div>
+                                </div>
                             </div>
                             <div class="job-date">01.2019 – Present</div>
                         </div>
@@ -617,8 +651,11 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div class="job-title-group">
-                                <div class="company-name">Société Générale CIB</div>
-                                <div class="role-title">Director & VP</div>
+                                <img src="https://www.google.com/s2/favicons?domain=societegenerale.com&sz=128" alt="Société Générale" class="company-logo">
+                                <div class="job-title-text">
+                                    <div class="company-name">Société Générale CIB</div>
+                                    <div class="role-title">Director & VP</div>
+                                </div>
                             </div>
                             <div class="job-date">2006 – 2021</div>
                         </div>
@@ -634,8 +671,11 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div class="job-title-group">
-                                <div class="company-name">Semaphores Expertise</div>
-                                <div class="role-title">Financial Auditor & Accountant</div>
+                                <img src="semaphores.jpg" alt="Semaphores" class="company-logo">
+                                <div class="job-title-text">
+                                    <div class="company-name">Semaphores Expertise</div>
+                                    <div class="role-title">Financial Auditor & Accountant</div>
+                                </div>
                             </div>
                             <div class="job-date">09.2003 – 11.2006</div>
                         </div>
