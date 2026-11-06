@@ -124,7 +124,7 @@ p { margin: 0; text-wrap: pretty; }
 .kicker { color: var(--gold); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.04em; margin-bottom: 22px; }
 .hero h1 { color: var(--on-navy); font-size: clamp(2.1rem, 4.4vw + 0.3rem, 4.1rem); line-height: 1.04; letter-spacing: -0.02em; }
 @media (min-width: 900px) { .hero h1 .line:nth-child(2) { padding-left: clamp(2rem, 9vw, 8.5rem); } }
-.hero h1 .line { display: block; overflow: hidden; padding-bottom: 0.06em; }
+.hero h1 .line { display: block; overflow: hidden; padding-bottom: 0.26em; margin-bottom: -0.2em; }
 .hero h1 .line > span { display: inline-block; }
 .hero-lead { color: var(--on-navy-muted); font-size: clamp(1.05rem, 0.4vw + 1rem, 1.2rem); line-height: 1.7; max-width: 46ch; }
 .hero-lead strong { color: var(--on-navy); font-weight: 500; }
@@ -365,7 +365,7 @@ section { padding: clamp(72px, 10vw, 136px) 0; }
 .site-footer a:hover { color: var(--gold); }
 
 /* ---------- Motion ---------- */
-@keyframes rise { from { transform: translateY(105%); } to { transform: none; } }
+@keyframes rise { from { transform: translateY(135%); } to { transform: none; } }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 @keyframes settle { from { opacity: 0; transform: translateY(24px) scale(0.985); } to { opacity: 1; transform: none; } }
 .hero .kicker { animation: fadeUp 0.8s var(--ease) both; }
